@@ -1,4 +1,8 @@
-public class CreditCard extends Card {
+public class CreditCard extends AbstractCard {
+    public CreditCard(double amount) {
+        super(amount);
+    }
+
     @Override
     public void take(double amount) {
 
@@ -9,6 +13,7 @@ public class CreditCard extends Card {
             this.balance -= amount;
             System.out.println("Операция снятие средств успешна прошла. Сумма списание составило: " + amount );
         }
+
     }
 
     @Override

@@ -1,10 +1,13 @@
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 
-public class DepositCard extends Card {
+public class DepositCard extends AbstractCard {
     public LocalDate localDate;
+
+    public DepositCard(double amount) {
+        super(amount);
+    }
+
     @Override
     public void take(double amount) {
 
